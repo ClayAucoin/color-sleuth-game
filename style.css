@@ -1,0 +1,9 @@
+div.cell {
+    height: 100px;
+    width: 100px;
+}
+
+div.spacer {
+    height: 50px;
+    width: 100px;
+}
