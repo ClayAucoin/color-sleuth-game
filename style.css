@@ -7,3 +7,9 @@ div.spacer {
     height: 25px;
     width: 25px;
 }
+
+.square {
+    background-color: #4CAF50;
+    height: 200px;
+    width: 200px;
+}   
