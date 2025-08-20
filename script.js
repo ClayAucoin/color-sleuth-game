@@ -112,8 +112,8 @@ function resetGame(){
 
 function playAgain(){
   p1Score = 0;
-  setText("score1_label", p1Score);
   p2Score = 0;
+  setText("score1_label", p1Score);
   setText("score2_label", p1Score);
   setScreen("gamePlay_screen");
 
@@ -128,8 +128,8 @@ onEvent("button3", "click", function(){checkCorrect("button3");});
 onEvent("button4", "click", function(){checkCorrect("button4");});
 
 onEvent("startButton", "click", function(){setScreen("gamePlay_screen");});
-onEvent("play_againButton", "click", function(){playAgain();});
-onEvent("reset_Button", "click", function(){resetGame();});
+onEvent("play_againButton", "click", playAgain);
+onEvent("reset_Button", "click", resetGame);
 
 // set initial board
 setBoard();
